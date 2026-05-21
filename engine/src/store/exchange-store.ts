@@ -69,6 +69,14 @@ export interface DepthResponse {
   asks: DepthLevel[];
 }
 
+
+
+export interface MatchResult {
+  fills: Fill[];
+  remainingQty: number;
+}
+
+
 export const BALANCES = new Map<string, Record<string, Balance>>();
 export const ORDERBOOKS = new Map<string, OrderBook>();
 export const ORDERS = new Map<string, OrderRecord>();
